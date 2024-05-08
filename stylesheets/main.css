@@ -24,3 +24,8 @@ input {
 #searchBtn:hover {
     box-shadow: none;
 }
+
+.icon {
+    max-width: 1.3em;
+    max-height: 1.3em;
+}
