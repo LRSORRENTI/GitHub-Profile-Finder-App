@@ -30,10 +30,24 @@ $(document).ready(() => {
             $('#profile').html(`
               <div class="p-4 border rounded shadow-sm">
                 <img src="${user.avatar_url}" alt="User Avatar" class="w-32 h-32 mb-2 rounded-full">
-                <h2 class="text-2xl font-semibold">${user.login}</h2>
+                <h2 class="text-2xl font-semibold">${user.login} - ${user.name}</h2>
                 <p class="text-slate-500">${user.bio || ''}</p>
                 <a href="${user.html_url}" class="text-blue-500" target="_blank">View Profile</a>
               </div>
+              <div class="flex">
+              <span>Repos ${user.public_repos}</span>
+              <span>Gists ${user.public_gists}</span>
+              <span>Followers ${user.followers}</span>
+              <span>Following ${user.following}</span>
+            </div>
+            <ul class="list-group">
+            <li class="list-group-item">Conpany: ${user.company}</li>
+            <li class="list-group-item">Website: ${user.website}</li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+
+            </ul>
+
             `);
           },
           error: (err) => {

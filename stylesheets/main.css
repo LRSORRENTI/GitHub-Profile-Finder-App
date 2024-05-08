@@ -16,3 +16,11 @@ body {
 input {
     padding: 4px;
 }
+
+#searchBtn {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: 0.7s ease;
+}
+#searchBtn:hover {
+    box-shadow: none;
+}
