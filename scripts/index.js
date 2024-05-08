@@ -72,7 +72,9 @@ $(document).ready(() => {
                   // Fetch languages from the `languages_url`
                   $.ajax({
                     url: repo.languages_url,
-                    async: false, // Ensures synchronous execution for languages data
+                    // async: false: Ensures that the request for languages executes 
+                    // synchronously so that the language data is available in the main repos.map() loop.
+                    async: false, 
                     success: (languages) => {
                       // Construct language info as a string
                       languagesHTML = Object.keys(languages).join(', ') || 'No languages';
