@@ -14,6 +14,7 @@
         // });
 //     })
 // })
+
 $(document).ready(() => {
     $('#searchBtn').on('click', () => {
       // Get the value of the search input
@@ -63,13 +64,35 @@ $(document).ready(() => {
             $.ajax({
               url: `https://api.github.com/users/${username}/repos?sort=updated&per_page=5`, // Adjust `per_page` as desired
               success: (repos) => {
-                // map through the repos for each repository
-                let reposHTML = repos.map((repo) => `
-                  <div class="mb-2">
-                    <a href="${repo.html_url}" target="_blank" class="text-blue-500 font-semibold">${repo.name}</a>
-                    <p>${repo.description || 'No description provided'}</p>
-                  </div>
-                `).join('');
+                // Loop through repositories to create the HTML with languages
+                let reposHTML = repos.map((repo) => {
+                  // Variable to store languages
+                  let languagesHTML = '';
+  
+                  // Fetch languages from the `languages_url`
+                  $.ajax({
+                    url: repo.languages_url,
+                    async: false, // Ensures synchronous execution for languages data
+                    success: (languages) => {
+                      // Construct language info as a string
+                      languagesHTML = Object.keys(languages).join(', ') || 'No languages';
+                    }
+                  });
+  
+                  // Return the HTML block for the current repo
+                  return `
+                    <div class="mb-2">
+                      <a href="${repo.html_url}" target="_blank" class="text-blue-500 font-semibold">${repo.name}</a>
+                      <p>${repo.description || 'No description provided'}</p>
+                    </div>
+                    <div>
+                      <span>Forks: ${repo.forks_count || '0'}</span>
+                      <span>Watchers: ${repo.watchers_count || '0'}</span>
+                      <span>Stars: ${repo.stargazers_count || '0'}</span>
+                      <span>Languages: ${languagesHTML}</span>
+                    </div>
+                  `;
+                }).join('');
   
                 $('#repos').html(reposHTML || '<p>No public repositories found.</p>');
               },
