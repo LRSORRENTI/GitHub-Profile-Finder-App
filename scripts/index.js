@@ -1,3 +1,7 @@
 $(document).ready(() => {
-    alert('jquery loaded!')
+    $('#searchUser').on('keyup', (evt) => {
+        // console.log(evt.target.value)
+        let username = evt.target.value;
+    })
 })
+
