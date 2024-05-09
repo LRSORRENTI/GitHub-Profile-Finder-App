@@ -17,15 +17,32 @@ input {
     padding: 4px;
 }
 
+#searchUser {
+    border: 1px solid slategray;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
 #searchBtn {
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     transition: 0.7s ease;
+    padding-top: 9.2px;
+    padding-bottom: 9.2px;
 }
 #searchBtn:hover {
     box-shadow: none;
 }
 
 .icon {
-    max-width: 1.3em;
-    max-height: 1.3em;
+    max-width: 2.5m;
+    max-height: 2.5em;
+    background-color: rgb(31, 31, 31);
+    padding: 4px;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+
+.avatar {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
