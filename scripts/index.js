@@ -102,15 +102,15 @@ $(document).ready(() => {
                     <p>${repo.description || 'No description provided'}</p>
                   </div>
                   <div class="border-b border-b-indigo-800 mb-4">
-                    <span>Forks: ${repo.forks_count || '0'}</span>
-                    <span>Watchers: ${repo.watchers_count || '0'}</span>
+                    <span>Forks: ${repo.forks_count || '0'} / </span>
+                    <span>Watchers: ${repo.watchers_count || '0'} / </span>
                     <span>Stars: ${repo.stargazers_count || '0'}</span>
-                    <span>Languages: ${languagesHTML}</span>
+    
                     <div class="flex">${languageIconsHTML}</div>
                   </div>
                 `;
               }).join('');
-
+{/* <span>Languages: ${languagesHTML}</span> */}
               $('#repos').html(reposHTML || '<p>No public repositories found.</p>');
             },
             error: (err) => {
