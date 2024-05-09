@@ -24,7 +24,8 @@ input {
 
 
 #searchBtn {
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     transition: 0.7s ease;
     padding-top: 9.2px;
     padding-bottom: 9.2px;
@@ -40,4 +41,8 @@ input {
     padding: 4px;
     border-radius: 10px;
     margin-right: 3px;
+}
+
+.avatar {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
