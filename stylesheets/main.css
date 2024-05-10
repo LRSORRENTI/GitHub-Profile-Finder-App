@@ -11,6 +11,10 @@ body {
     box-shadow: 0 4px 6px 0 rgba(0,0,0,.9);
 }
 
+.navTitle {
+    letter-spacing: 5px;
+    text-shadow: 1px 1px rgb(152, 148, 194);
+}
 
 
 input {
