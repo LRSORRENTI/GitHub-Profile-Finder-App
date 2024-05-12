@@ -103,8 +103,8 @@ $(document).ready(() => {
                     <p class="max-w-96">${repo.description || 'No description provided'}</p>
                   </div>
                   <div id="repoStats" class="mb-4">
-                    <span>Forks: ${repo.forks_count || '0'} / </span>
-                    <span>Watchers: ${repo.watchers_count || '0'} / </span>
+                    <span>Forks: ${repo.forks_count || '0'} </span>
+                    <span>Watchers: ${repo.watchers_count || '0'}</span>
                     <span>Stars: ${repo.stargazers_count || '0'}</span>
     
                     <div id="languages" class="flex">${languageIconsHTML}</div>

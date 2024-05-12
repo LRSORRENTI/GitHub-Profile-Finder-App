@@ -31,7 +31,8 @@ body {
 }
 
 #repo-name:hover {
-    background-color: #4338CA;;
+    background-color: #4338CA;
+    color: #fdfdfdee;
 }
 
 #repos {
@@ -52,8 +53,8 @@ body {
 
 #singleRepo {
     /* border: 2px solid rgb(158, 202, 56); */
-    width: 350px;
-    height: 290px;
+    width: 450px;
+    height: 310px;
      flex-grow: 1;
      justify-content: space-evenly;
      align-items: flex-start;
@@ -83,12 +84,15 @@ body {
 }
 
 #repoStats > span {
-    background-color: #4338CA;
+    background-color: #3b3b3b;
     margin-right:  5px;
     border-radius: 5px;
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     color: #FFF;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 #languages {
@@ -104,6 +108,15 @@ body {
         flex: 0 0 0%; 
         margin: 0px; 
     }
+    #repoStats > span {
+        font-size: 14.5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+        
+    }
   }
   @media screen and (min-width: 1028px) {
     #repos {
@@ -114,11 +127,8 @@ body {
     }
     #repos > div {
         flex: 1 1 30%; /* Adjusts the basis to around 30% to allow three items per row */
-        margin: 10px; /* Optional: Adds some space between the items */
-    }
-    #repoStats > span {
-        font-size: 14.5px;
-        
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -135,12 +145,15 @@ input {
 #searchBtn {
     /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    transition: 0.7s ease;
+    transition: 0.3s ease;
     padding-top: 9.2px;
     padding-bottom: 9.2px;
+    background-color: #3b3b3b;
+    color: #FFF;
 }
 #searchBtn:hover {
     box-shadow: none;
+    background-color: #4338CA;
 }
 
 .icon {
