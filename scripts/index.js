@@ -99,7 +99,7 @@ $(document).ready(() => {
                 return `
                   <div id="singleRepo">
                   <div id="repoTitle">
-                    <a href="${repo.html_url}" target="_blank" class="text-indigo-700 font-semibold hover:text-indigo-500 transition ease">${repo.name}</a>
+                    <a href="${repo.html_url}" target="_blank" class="" id="repo-name">${repo.name}</a>
                     <p class="max-w-96">${repo.description || 'No description provided'}</p>
                   </div>
                   <div id="repoStats" class="mb-4">
@@ -107,7 +107,7 @@ $(document).ready(() => {
                     <span>Watchers: ${repo.watchers_count || '0'} / </span>
                     <span>Stars: ${repo.stargazers_count || '0'}</span>
     
-                    <div class="flex">${languageIconsHTML}</div>
+                    <div id="languages" class="flex">${languageIconsHTML}</div>
                   </div>
                   </div>
                 `;
