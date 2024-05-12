@@ -57,12 +57,12 @@ $(document).ready(() => {
               <li class="list-group-item">Member Since: ${createdAt}</li>
             </ul>
             <h3 class="text-xl font-semibold mb-2">Latest Repos</h3>
-            <div id="repos"></div>
+            <div id="repos" class=""></div>
           `);
 
           // Additional AJAX request to get the user's repositories
           $.ajax({
-            url: `https://api.github.com/users/${username}/repos?sort=updated&per_page=5`, // Adjust `per_page` as desired
+            url: `https://api.github.com/users/${username}/repos?sort=updated&per_page=6`, // Adjust `per_page` as desired
             success: (repos) => {
               // Loop through repositories to create the HTML with languages
               let reposHTML = repos.map((repo) => {
@@ -97,16 +97,18 @@ $(document).ready(() => {
 
                 // Return the HTML block for the current repo
                 return `
-                  <div class="mb-2">
+                  <div id="singleRepo">
+                  <div id="repoTitle">
                     <a href="${repo.html_url}" target="_blank" class="text-indigo-700 font-semibold hover:text-indigo-500 transition ease">${repo.name}</a>
-                    <p>${repo.description || 'No description provided'}</p>
+                    <p class="max-w-96">${repo.description || 'No description provided'}</p>
                   </div>
-                  <div class="border-b border-b-indigo-800 mb-4">
+                  <div id="repoStats" class="mb-4">
                     <span>Forks: ${repo.forks_count || '0'} / </span>
                     <span>Watchers: ${repo.watchers_count || '0'} / </span>
                     <span>Stars: ${repo.stargazers_count || '0'}</span>
     
                     <div class="flex">${languageIconsHTML}</div>
+                  </div>
                   </div>
                 `;
               }).join('');

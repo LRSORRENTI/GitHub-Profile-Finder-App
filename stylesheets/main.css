@@ -13,9 +13,62 @@ body {
 
 .navTitle {
     letter-spacing: 5px;
-    text-shadow: 1px 1px rgb(152, 148, 194);
+    text-shadow: 1px 1px rgb(67, 56, 202);
 }
 
+
+#repos {
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    flex-grow: 1;
+    justify-content: center;
+    margin: auto;
+    align-items: flex-start;
+}
+
+#singleRepo {
+    border: 2px solid rgb(158, 202, 56);
+    width: 350px;
+    height: 300px;
+     flex-grow: 1;
+     justify-content: space-evenly;
+     align-items: flex-start;
+}
+
+
+#repoTitle {
+    border: 2px solid rgb(163, 35, 255);
+    min-height: 180px;
+}
+
+#repoStats {
+    border: 2px solid orange;
+}
+
+@media screen and (min-width: 1600px) {
+    #repos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #repos > div {
+        flex: 0 0 0%; 
+        margin: 0px; 
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    #repos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between; /* This ensures that items are evenly spaced */
+    }
+    #repos > div {
+        flex: 1 1 30%; /* Adjusts the basis to around 30% to allow three items per row */
+        margin: 10px; /* Optional: Adds some space between the items */
+    }
+}
 
 input {
     padding: 4px;
