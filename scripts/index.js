@@ -40,7 +40,7 @@ $(document).ready(() => {
           $('#profile').html(`
             <div class="border rounded shadow-sm">
               <img src="${user.avatar_url}" alt="User Avatar" class="w-32 h-32 mb-2 rounded-full avatar mt-2">
-              <h2 class="text-2xl font-semibold">${user.login} - ${user.name}</h2>
+              <h2 class="text-2xl font-semibold text-slate-700">${user.login} - ${user.name}</h2>
               <p class="text-indigo-700">${bio}</p>
               <a href="${user.html_url}" class="text-2xl font-semibold text-indigo-700 hover:text-indigo-500 transition ease" target="_blank">View Profile</a>
             </div>
@@ -57,12 +57,12 @@ $(document).ready(() => {
               <li class="list-group-item">Member Since: ${createdAt}</li>
             </ul>
             <h3 class="text-xl font-semibold mb-2">Latest Repos</h3>
-            <div id="repos"></div>
+            <div id="repos" class=""></div>
           `);
 
           // Additional AJAX request to get the user's repositories
           $.ajax({
-            url: `https://api.github.com/users/${username}/repos?sort=updated&per_page=5`, // Adjust `per_page` as desired
+            url: `https://api.github.com/users/${username}/repos?sort=updated&per_page=6`, // Adjust `per_page` as desired
             success: (repos) => {
               // Loop through repositories to create the HTML with languages
               let reposHTML = repos.map((repo) => {
@@ -97,16 +97,18 @@ $(document).ready(() => {
 
                 // Return the HTML block for the current repo
                 return `
-                  <div class="mb-2">
-                    <a href="${repo.html_url}" target="_blank" class="text-indigo-700 font-semibold hover:text-indigo-500 transition ease">${repo.name}</a>
-                    <p>${repo.description || 'No description provided'}</p>
+                  <div id="singleRepo">
+                  <div id="repoTitle">
+                    <a href="${repo.html_url}" target="_blank" class="" id="repo-name">${repo.name}</a>
+                    <p class="max-w-96">${repo.description || 'No description provided'}</p>
                   </div>
-                  <div class="border-b border-b-indigo-800 mb-4">
-                    <span>Forks: ${repo.forks_count || '0'} / </span>
-                    <span>Watchers: ${repo.watchers_count || '0'} / </span>
+                  <div id="repoStats" class="mb-4">
+                    <span>Forks: ${repo.forks_count || '0'} </span>
+                    <span>Watchers: ${repo.watchers_count || '0'}</span>
                     <span>Stars: ${repo.stargazers_count || '0'}</span>
     
-                    <div class="flex">${languageIconsHTML}</div>
+                    <div id="languages" class="flex">${languageIconsHTML}</div>
+                  </div>
                   </div>
                 `;
               }).join('');
