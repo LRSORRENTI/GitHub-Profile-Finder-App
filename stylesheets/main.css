@@ -53,7 +53,7 @@ body {
 
 #singleRepo {
     /* border: 2px solid rgb(158, 202, 56); */
-    width: 450px;
+    width: 383px;
     height: 310px;
      flex-grow: 1;
      justify-content: space-evenly;
@@ -76,6 +76,8 @@ body {
     color: #3b3b3b;
     font-weight: 600;
     margin-top: 5px;
+    max-width: 400px;
+    word-wrap: break-word;
 }
 
 #repoStats {
