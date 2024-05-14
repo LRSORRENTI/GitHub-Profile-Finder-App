@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #dddddd;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 #navbar {
@@ -14,6 +14,7 @@ body {
 .navTitle {
     letter-spacing: 5px;
     text-shadow: 1px 1px rgb(67, 56, 202);
+    
 }
 
 #view-prof {
@@ -24,19 +25,19 @@ body {
     padding-bottom: 9.2px;
     padding-left: 5px;
     padding-right: 5px;
-    background-color: #4338CA;
-    color: #FFF;
-    border: 1px solid #3b3b3b;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #3b3b3b;
+    border: 1px solid #c2c2c2;
     border-radius: 5px;
     font-weight: bold;
-   
+    transition: 0.1s ease-out;
 }
 
 
 #view-prof:hover {
-    box-shadow: none;
-    background-color: #3b3b3b;
-    color: #e7e7e7;
+  color: #555555;
+  box-shadow: none;
+  transition: .2s ease-out;
 
 }
 #prof-details {
@@ -44,8 +45,8 @@ body {
 }
 
 #prof-details > span {
-    background-color: #3b3b3b;
-    color: #FFF;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #3b3b3b;
     padding-top: 4px;
     padding-bottom: 3px;
     padding-left: 4px;
@@ -65,9 +66,9 @@ body {
 }
 
 #prof-ul > li {
-    background-color: #3b3b3b;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     margin-bottom: 5px;
-    color: #FFF;
+    color: #3b3b3b;
     border-radius: 5px;
     
     padding-top: 4px;
@@ -79,9 +80,9 @@ body {
 }
 
 #repo-name {
-    color: #FFF;
+    color: #3b3b3b;
     /* background-color: #3b3b3b; */
-    background-color: #4338CA;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     width: inherit;
     display: block;
     padding-left: 5px;
@@ -92,12 +93,13 @@ body {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .9);
 
 }
 
 #repo-name:hover {
-    background-color: #3b3b3b;
-    color: #fdfdfdee;
+    background-image: linear-gradient(315deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #000000;
 }
 
 #repos {
@@ -153,20 +155,24 @@ body {
 }
 
 #repoStats>span {
-    background-color: #3b3b3b;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.23) 0px 2px 3px;
     margin-right: 5px;
     border-radius: 5px;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 3px;
     padding-bottom: 3px;
-    color: #FFF;
+    color: #3b3b3b;
+    font-weight: bold;
     /* font-weight: 600; */
 }
 
 #languages {
     margin-top: 3px;
 }
+
+
 
 @media screen and (min-width: 1600px) {
     #repos {
@@ -195,7 +201,6 @@ body {
 
 @media screen and (min-width: 600px) { 
     #prof-details > span {
-        color: #FFF;
         padding-top: 4px;
         padding-bottom: 2px;
         padding-left: 7px;
@@ -224,7 +229,6 @@ body {
     }
   
     #prof-details > span {
-        color: #FFF;
         padding-top: 4px;
         padding-bottom: 2px;
         padding-left: 7px;
@@ -253,25 +257,28 @@ input {
     transition: 0.3s ease;
     padding-top: 9.2px;
     padding-bottom: 9.2px;
-    background-color: #4338CA;
-    color: #FFF;
-    border: 1px solid #3b3b3b;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #3b3b3b;
+    border: 1px solid #c2c2c2;
+    font-weight: bold;
 }
 
 #searchBtn:hover {
     box-shadow: none;
     background-color: #3b3b3b;
-    color: #e7e7e7;
+    color: #555555;
 
 }
 
 .icon {
     max-width: 2.5m;
     max-height: 2.5em;
-    background-color: rgb(31, 31, 31);
+    /* background-color: rgb(31, 31, 31); */
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     padding: 4px;
     border-radius: 10px;
     margin-right: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .avatar {
@@ -279,14 +286,16 @@ input {
 }
 
 h1 {
-    text-shadow: 0px 1px 1px rgb(0, 0, 0);
+    text-shadow: 0px 1px 1px rgb(255, 255, 255);
+    color: #3b3b3b;
+    font-weight: bold;
 }
 
 h2 {
-    background-color: #3b3b3b;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     max-width: fit-content;
-    color: #FFF;
-    font-weight: bold;
+    color: #3b3b3b;
+    font-weight: normal;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 6px;
