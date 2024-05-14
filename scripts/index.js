@@ -38,7 +38,7 @@ $(document).ready(() => {
 
           // Populate profile information
           $('#profile').html(`
-            <div class="border rounded shadow-sm">
+            <div class="border rounded">
               <img src="${user.avatar_url}" alt="User Avatar" class="w-32 h-32 mb-2 rounded-full avatar mt-2">
               <h2 class="text-2xl">${user.login} - ${user.name}</h2>
               <p class="text-indigo-700">${bio}</p>
