@@ -44,13 +44,13 @@ $(document).ready(() => {
               <p class="text-indigo-700">${bio}</p>
               <a href="${user.html_url}" class="text-2xl font-semibold text-indigo-700 hover:text-indigo-500 transition ease" target="_blank">View Profile</a>
             </div>
-            <div class="flex justify-between space-x-2 my-2">
+            <div class="flex justify-between space-x-2 my-2" id="prof-details">
               <span>Repos: ${user.public_repos}</span>
               <span>Gists: ${user.public_gists}</span>
               <span>Followers: ${user.followers}</span>
               <span>Following: ${user.following}</span>
             </div>
-            <ul class="list-group mb-4">
+            <ul class="list-group mb-4" id="prof-ul">
               <li class="list-group-item">Company: ${company}</li>
               <li class="list-group-item">Website: ${website}</li>
               <li class="list-group-item">Location: ${location}</li>
@@ -103,12 +103,13 @@ $(document).ready(() => {
                     <p class="max-w-96">${repo.description || 'No description provided'}</p>
                   </div>
                   <div id="repoStats" class="mb-4">
-                    <span>Forks: ${repo.forks_count || '0'} </span>
+                    <span>Forks: ${repo.forks_count || '0'}</span>
                     <span>Watchers: ${repo.watchers_count || '0'}</span>
                     <span>Stars: ${repo.stargazers_count || '0'}</span>
     
-                    <div id="languages" class="flex">${languageIconsHTML}</div>
+                 
                   </div>
+                  <div id="languages" class="flex">${languageIconsHTML}</div>
                   </div>
                 `;
               }).join('');
