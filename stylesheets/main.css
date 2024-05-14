@@ -16,8 +16,35 @@ body {
     text-shadow: 1px 1px rgb(67, 56, 202);
 }
 
-#prof-details > span {
+#view-prof {
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.3s ease;
+    padding-top: 9.2px;
+    padding-bottom: 9.2px;
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: #4338CA;
+    color: #FFF;
+    border: 1px solid #3b3b3b;
+    border-radius: 5px;
+    font-weight: bold;
+   
+}
+
+
+#view-prof:hover {
+    box-shadow: none;
+    background-color: #3b3b3b;
+    color: #e7e7e7;
+
+}
+#prof-details {
+    margin-top: 30px;
+}
+
+#prof-details > span {
+    background-color: #3b3b3b;
     color: #FFF;
     padding-top: 4px;
     padding-bottom: 3px;
@@ -38,7 +65,7 @@ body {
 }
 
 #prof-ul > li {
-    background-color: #4338CA;
+    background-color: #3b3b3b;
     margin-bottom: 5px;
     color: #FFF;
     border-radius: 5px;
@@ -168,7 +195,6 @@ body {
 
 @media screen and (min-width: 600px) { 
     #prof-details > span {
-        background-color: #4338CA;
         color: #FFF;
         padding-top: 4px;
         padding-bottom: 2px;
@@ -198,7 +224,6 @@ body {
     }
   
     #prof-details > span {
-        background-color: #4338CA;
         color: #FFF;
         padding-top: 4px;
         padding-bottom: 2px;
@@ -267,7 +292,7 @@ h2 {
     padding-top: 6px;
     padding-bottom: 6px;
     border-radius: 7px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }

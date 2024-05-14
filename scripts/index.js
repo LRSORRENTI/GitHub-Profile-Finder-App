@@ -42,7 +42,7 @@ $(document).ready(() => {
               <img src="${user.avatar_url}" alt="User Avatar" class="w-32 h-32 mb-2 rounded-full avatar mt-2">
               <h2 class="text-2xl">${user.login} - ${user.name}</h2>
               <p class="text-indigo-700">${bio}</p>
-              <a href="${user.html_url}" class="text-2xl font-semibold text-indigo-700 hover:text-indigo-500 transition ease" target="_blank">View Profile</a>
+              <a href="${user.html_url}" id="view-prof" target="_blank">View Profile</a>
             </div>
             <div class="flex justify-between space-x-2 my-2" id="prof-details">
               <span>Repos: ${user.public_repos}</span>
