@@ -292,18 +292,15 @@ body {
     
 }
 
-#input {
+#searchUser {
+    border: 1px solid slategray;
     padding-top: 13px;
     padding-bottom: 9px;
     padding-left: 10px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 8px, rgba(0, 0, 0, 0.23) 0px 5px 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 8px, rgba(0, 0, 0, 0.23) 0px 3px 8px;
 
-}
-
-#searchUser {
-    border: 1px solid slategray;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
 }
 
 
