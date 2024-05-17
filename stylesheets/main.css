@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 body {
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
@@ -14,7 +20,7 @@ body {
 .navTitle {
     letter-spacing: 5px;
     text-shadow: 1px 1px rgb(67, 56, 202);
-    
+    color: red;
 }
 
 #prof-img {
@@ -31,12 +37,21 @@ body {
     padding-left: 5px;
     padding-right: 5px;
     margin-top: 12px;
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    color: #3b3b3b;
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    /* background-image: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%); */
+    background-image: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    color: #ffffff;
+
     border: 1px solid #c2c2c2;
     border-radius: 5px;
     font-weight: bold;
     transition: 0.1s ease-out;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 
@@ -44,7 +59,7 @@ body {
   color: #555555;
   box-shadow: none;
   transition: .2s ease-out;
-
+  text-shadow: none;
 }
 #prof-details {
     margin-top: 30px;
@@ -52,13 +67,19 @@ body {
 
 #prof-details > span {
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    /* background-image: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); */
+
     color: #3b3b3b;
     padding-top: 4px;
     padding-bottom: 3px;
     padding-left: 4px;
     padding-right: 4px;
-    font-weight: bold;
-    font-size: 10px;
+    /* font-weight: bold;
+    font-size: 10px; */
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
     border-radius: 3px;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .9);
     
@@ -68,6 +89,7 @@ body {
     background-color: #dddddd;
     max-width: fit-content;
     margin-top: 20px;
+    
 
 }
 
@@ -83,12 +105,18 @@ body {
     padding-right: 8px;
     font-weight: bold;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .9);
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
 }
 
 #repo-name {
     color: #3b3b3b;
     /* background-color: #3b3b3b; */
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-image: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
     width: inherit;
     display: block;
     padding-left: 5px;
@@ -100,6 +128,9 @@ body {
     border-bottom-left-radius: 10px;
     transition: 0.2s ease-in-out;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .9);
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
 
 }
 
@@ -127,14 +158,16 @@ body {
 #singleRepo {
     /* border: 2px solid rgb(158, 202, 56); */
     width: 383px;
-    height: 310px;
+    height: fit-content;
     flex-grow: 1;
     justify-content: space-evenly;
     align-items: flex-start;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: rgb(224, 224, 224);
+    /* background-color: rgb(224, 224, 224); */
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -143,25 +176,33 @@ body {
     /* border: 2px solid rgb(163, 35, 255); */
     min-height: 200px;
     border-bottom: 2px solid #8b87bd;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
 }
 
 #repoTitle>p {
     padding-left: 5px;
     color: #3b3b3b;
-    font-weight: 600;
     margin-top: 5px;
     max-width: 400px;
     word-wrap: break-word;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
 }
 
 #repoStats {
     border-bottom: 2px solid #8b87bd;
     padding-bottom: 7px;
     padding-top: 5px;
+    
 }
 
 #repoStats>span {
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.23) 0px 2px 3px;
     margin-right: 5px;
     border-radius: 5px;
@@ -170,8 +211,12 @@ body {
     padding-top: 3px;
     padding-bottom: 3px;
     color: #3b3b3b;
-    font-weight: bold;
-    /* font-weight: 600; */
+    /* font-weight: bold;
+    font-weight: 600; */
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
 }
 
 #languages {
@@ -247,13 +292,15 @@ body {
     
 }
 
-input {
-    padding: 4px;
-}
-
 #searchUser {
     border: 1px solid slategray;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding-top: 13px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 8px, rgba(0, 0, 0, 0.23) 0px 3px 8px;
+
+    
 }
 
 
@@ -261,19 +308,28 @@ input {
     /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     transition: 0.3s ease;
-    padding-top: 9.2px;
-    padding-bottom: 9.2px;
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    color: #3b3b3b;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    /* background-image: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); */
+    /* background-image: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%); */
+    background-image: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    font-size: 20px;
+    color: #ffffff;
     border: 1px solid #c2c2c2;
-    font-weight: bold;
+    font-weight: thin;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 #searchBtn:hover {
     box-shadow: none;
     background-color: #3b3b3b;
     color: #555555;
-
+    text-shadow: none;
+ /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
 }
 
 .icon {
@@ -294,14 +350,18 @@ input {
 h1 {
     text-shadow: 0px 1px 1px rgb(255, 255, 255);
     color: #3b3b3b;
-    font-weight: bold;
+    font-weight: thin;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 4px;
 }
 
 h2 {
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     max-width: fit-content;
+    font-family: "Bebas Neue", sans-serif;
     color: #3b3b3b;
-    font-weight: normal;
+    letter-spacing: 5px;
+    font-weight: 100;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 6px;
@@ -315,6 +375,17 @@ h2 {
 /* This styles the 'Latest Repos H3, probably should add a class or id 
 instead of styling all H3's but leaving it for now*/
 h3 {
-    color: #3b3b3b
+    color: #3b3b3b;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
 }
 
+.text {
+    color: #3b3b3b;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+}
